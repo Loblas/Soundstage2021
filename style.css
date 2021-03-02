@@ -26,6 +26,49 @@ body {
     display: none;
 }
 
+/* Controls Songs section*/
+
+.songs {
+    margin: auto;
+    background-color: var(--brand-lightblue);
+    height: 100vh;
+}
+
+.songs h1 {
+    margin: auto;
+    padding-top: 2em;
+    text-align: center;
+    font-size: xxx-large;
+    color: white;
+}
+
+.songs h2 {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: white;
+}
+
+.spotify-links {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.songs .grid-container {
+    display: grid;
+    grid-template-columns: 20em 20em 20em 20em;
+    grid-template-rows: 7.5em;
+}
+
+.songs iframe {
+    margin: auto;
+    margin-bottom: 5em;
+    border-style: none;
+    height: 5em;
+}
+
 .btn-mobil {
     display: none;
 }
