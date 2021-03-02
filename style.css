@@ -1,0 +1,297 @@
+:root {
+    --primary-bc: #f2cb9f;
+    --brand-red: #D34C45;
+    --brand-lightblue: #6db0cb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* GIF by dodik / MotionElements.com */
+    background-image: url(giffy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mobil-welcome {
+    display: none;
+}
+
+.btn-mobil {
+    display: none;
+}
+
+
+/*controls spotify desktop btn postion*/
+
+.more-spotify {
+    margin: auto;
+    display: flex;
+}
+
+
+/*Controls footer*/
+
+footer {
+    display: flex;
+    background-color: grey;
+    margin: auto;
+    padding: 2em;
+}
+
+footer p {
+    color: white;
+}
+
+footer .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: none;
+}
+
+footer a {
+    margin: 0;
+    padding: 0%;
+}
+
+footer .some {
+    margin: auto;
+    padding: 0%;
+    max-width: 15%;
+    float: right;
+}
+
+footer .youtube {
+    max-width: 17%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        /* GIF by dodik / MotionElements.com */
+        background-image: url(Band-mobil-bacground.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /*Front page*/
+    .mobil-welcome {
+        margin: auto;
+        display: flex;
+    }
+    .mobil-welcome h1 {
+        margin: auto;
+        margin-top: 14em;
+        display: inline;
+        color: var(--primary-bc);
+        text-align: center;
+    }
+    /* Nav controls*/
+    nav {
+        display: flex;
+        background-color: transparent;
+    }
+    @-webkit-keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    .th-logo {
+        margin: auto;
+        position: absolute;
+        top: 5%;
+        left: 25%;
+        display: flex;
+        max-width: 50%;
+        -webkit-animation: spin 15s linear infinite;
+    }
+    nav ul {
+        display: none;
+    }
+    nav li {
+        margin: auto;
+        padding: 0%;
+        list-style: none;
+    }
+    /* Social media logos*/
+    .nav .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 0%;
+    }
+    .some {
+        padding: 0%;
+        max-width: 10%;
+        position: relative;
+        top: 530%;
+    }
+    .youtube {
+        max-width: 15%;
+    }
+    /* controls new ep section*/
+    .newep {
+        margin-top: 20em;
+        background-color: bisque;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+    .newep h1 {
+        margin: auto;
+        padding-top: 2em;
+        text-align: center;
+        font-size: xxx-large;
+        color: var(--brand-red);
+    }
+    .newep h2 {
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        text-align: center;
+        color: var(--brand-red);
+    }
+    .ep-link {
+        margin: auto;
+        padding: 0;
+        border-style: none;
+        display: flex;
+        width: 80%;
+        height: 10em;
+    }
+    .newep .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10em 10em;
+    }
+    .newep a {
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: solid;
+        border-radius: 2em;
+        border-color: var(--brand-lightblue);
+        background-color: var(--brand-lightblue);
+    }
+    /* Controls Songs section*/
+    .songs {
+        margin: auto;
+        color: var(--brand-lightblue);
+        height: 65em;
+    }
+    .songs h1 {
+        margin: auto;
+        padding-top: 2em;
+        text-align: center;
+        font-size: xxx-large;
+        color: white;
+    }
+    .songs h2 {
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+        color: white;
+    }
+    .spotify-links {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .songs .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .songs iframe {
+        margin: auto;
+        margin-bottom: 2em;
+        border-style: none;
+        height: 5em;
+    }
+    .songs a {
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: solid;
+        border-radius: 2em;
+        border-color: var(--primary-bc);
+    }
+    /* Controls about Tender house section*/
+    .about {
+        height: auto;
+        background-color: transparent;
+    }
+    .about .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10em 6em;
+    }
+    .about h1 {
+        margin: 1em;
+        padding-top: 2em;
+        text-align: center;
+        font-size: xxx-large;
+        color: var(--brand-red);
+    }
+    .band {
+        display: none;
+    }
+    .about p {
+        color: var(--primary-bc);
+        text-align: center;
+        margin: auto;
+    }
+    .some-text {
+        margin: auto;
+        margin-top: 7em;
+    }
+    .about a {
+        display: none;
+    }
+    /*Footer control*/
+    footer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    .desktop-footer {
+        display: none;
+    }
+    footer p {
+        color: white;
+    }
+    footer .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: none;
+    }
+    footer a {
+        margin: auto;
+    }
+    .footer .grid-container {
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 0;
+    }
+    .footer .some {
+        margin: 1em;
+        padding: 0%;
+        max-width: 60%;
+    }
+    .footer .youtube {
+        left: 0.6em;
+        max-width: 85%;
+    }
+}
